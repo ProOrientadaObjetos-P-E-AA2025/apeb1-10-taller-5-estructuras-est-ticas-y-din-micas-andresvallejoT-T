@@ -25,6 +25,7 @@ public class Problema_1_SistemaDeVentasCarritoDeCompras {
                 if (producto.cantidad >= cantidad) {
                     carrito.add(new Problema_1_SistemaDeVentasProducto(producto.nombre, producto.precio, cantidad));
                     System.out.println("Producto agregado al carrito.");
+                    actualizarInventario();
                 } else {
                     System.out.println("No hay suficiente cantidad disponible.");
                 }

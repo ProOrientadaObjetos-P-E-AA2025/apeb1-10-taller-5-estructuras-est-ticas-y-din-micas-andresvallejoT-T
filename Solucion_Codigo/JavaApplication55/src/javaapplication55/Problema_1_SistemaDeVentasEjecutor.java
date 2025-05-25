@@ -39,8 +39,11 @@ public class Problema_1_SistemaDeVentasEjecutor {
                 case 3 -> {
                     System.out.print("Monto a pagar: ");
                     double monto = tcl.nextDouble();
+                    double descuento=0;
+                    if(monto>=1000){
                     System.out.print("Descuento promocional (%): ");
-                    double descuento = tcl.nextDouble();
+                     descuento = tcl.nextDouble();
+                    }
                     carrito.realizarPago(monto, descuento);
                 }
                 case 4 -> {
